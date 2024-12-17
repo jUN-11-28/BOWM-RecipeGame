@@ -1,378 +1,377 @@
 {
-    "recipes": [
-      {
-        "name": "피치선셋",
-        "recipe": [
-          { "type": "ingredient", "value": "피치프리스" },
-          { "type": "quantity", "value": "45g" },
-          { "type": "ingredient", "value": "탄산수" },
-          { "type": "action", "value": "저어서" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "적당량" },
-          { "type": "ingredient", "value": "오렌지티" },
-          { "type": "quantity", "value": "25g" },
-          { "type": "ingredient", "value": "코코젤리" },
-          { "type": "quantity", "value": "조금" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "수박주스",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "8P" },
-          { "type": "ingredient", "value": "물" },
-          { "type": "quantity", "value": "200ml" },
-          { "type": "ingredient", "value": "수박" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "action", "value": "블렌더 계속버튼" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "레몬에이드",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "12P" },
-          { "type": "ingredient", "value": "레몬청" },
-          { "type": "quantity", "value": "50g" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "적당량" },
-          { "type": "ingredient", "value": "탄산수" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "자몽에이드",
-        "recipe": [
-          { "type": "ingredient", "value": "자몽청" },
-          { "type": "quantity", "value": "55g" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "탄산수" },
-          { "type": "ingredient", "value": "건자몽" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "오미자에이드",
-        "recipe": [
-          { "type": "ingredient", "value": "오미자청" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "탄산수" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "피치 아이스티",
-        "recipe": [
-          { "type": "ingredient", "value": "피치프리스" },
-          { "type": "quantity", "value": "65g" },
-          { "type": "ingredient", "value": "탄산수" },
-          { "type": "action", "value": "저어서" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "자몽차 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "자몽청" },
-          { "type": "quantity", "value": "55g" },
-          { "type": "ingredient", "value": "뜨거운 물" },
-          { "type": "ingredient", "value": "건자몽" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" }
-        ]
-      },
-      {
-        "name": "자몽차 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "자몽청" },
-          { "type": "quantity", "value": "55g" },
-          { "type": "ingredient", "value": "물" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "건자몽" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "오미자차 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "오미자청" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "ingredient", "value": "뜨거운 물" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" }
-        ]
-      },
-      {
-        "name": "오미자차 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "오미자청" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "ingredient", "value": "물" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "데코레몬" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "3개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "생강차 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "생강청" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "ingredient", "value": "뜨거운 물" },
-          { "type": "ingredient", "value": "계피스틱" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "대추칩" },
-          { "type": "quantity", "value": "3개" }
-        ]
-      },
-      {
-        "name": "생강차 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "생강청" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "ingredient", "value": "물" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "계피스틱" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "대추칩" },
-          { "type": "quantity", "value": "3개" }
-        ]
-      },
-      {
-        "name": "딸기라떼",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "2P" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "170g" },
-          { "type": "ingredient", "value": "딸기청" },
-          { "type": "quantity", "value": "80g" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "플레인 요거트 스무디",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "140g" },
-          { "type": "ingredient", "value": "요거트 파우더" },
-          { "type": "quantity", "value": "2스푼 수북히!" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "250g" },
-          { "type": "action", "value": "블렌더" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "딸기 요거트 스무디",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "140g" },
-          { "type": "ingredient", "value": "요거트 파우더" },
-          { "type": "quantity", "value": "2스푼 수북히!" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "250g" },
-          { "type": "action", "value": "블렌더" },
-          { "type": "ingredient", "value": "딸기청" },
-          { "type": "quantity", "value": "40g" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "블루베리 요거트 스무디",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "140g" },
-          { "type": "ingredient", "value": "요거트 파우더" },
-          { "type": "quantity", "value": "2스푼 수북히!" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "250g" },
-          { "type": "action", "value": "블렌더" },
-          { "type": "ingredient", "value": "블루베리" },
-          { "type": "quantity", "value": "40g" },
-          { "type": "ingredient", "value": "크랜베리" },
-          { "type": "quantity", "value": "1개" },
-          { "type": "ingredient", "value": "노무라 / 허브" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      },
-      {
-        "name": "미숫가루 스무디",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "140g" },
-          { "type": "ingredient", "value": "미숫가루 파우더" },
-          { "type": "quantity", "value": "2스푼 수수북히!" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "250g" },
-          { "type": "action", "value": "블렌더" },
-          { "type": "ingredient", "value": "크로칸트" },
-          { "type": "quantity", "value": "적당량" }
-        ]
-      },
-      {
-        "name": "초코라떼 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "2P" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "100g" },
-          { "type": "ingredient", "value": "초코베이스" },
-          { "type": "quantity", "value": "130g" }
-        ]
-      },
-      {
-        "name": "초코라떼 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "2P" },
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "100g" },
-          { "type": "ingredient", "value": "초코베이스" },
-          { "type": "quantity", "value": "130g" },
-          { "type": "action", "value": "스팀" }
-        ]
-      },
-      {
-        "name": "말차라떼 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "ingredient", "value": "말차베이스" },
-          { "type": "quantity", "value": "45g" }
-        ]
-      },
-      {
-        "name": "말차라떼 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "ingredient", "value": "말차베이스" },
-          { "type": "quantity", "value": "45g" },
-          { "type": "action", "value": "스팀" }
-        ]
-      },
-      {
-        "name": "자색고구마라떼 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "ingredient", "value": "자색고구마 베이스" },
-          { "type": "quantity", "value": "45g" }
-        ]
-      },
-      {
-        "name": "자색고구마라떼 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "ingredient", "value": "자색고구마 베이스" },
-          { "type": "quantity", "value": "45g" },
-          { "type": "action", "value": "스팀" }
-        ]
-      },
-      {
-        "name": "밀크티 아이스",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "2P" },
-          { "type": "ingredient", "value": "얼음" },
-          { "type": "quantity", "value": "가득" },
-          { "type": "ingredient", "value": "밀크티베이스" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "ingredient", "value": "파란꽃" },
-          { "type": "quantity", "value": "한꼬집" }
-        ]
-      },
-      {
-        "name": "밀크티 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "시럽" },
-          { "type": "quantity", "value": "2P" },
-          { "type": "ingredient", "value": "밀크티베이스" },
-          { "type": "quantity", "value": "200g" },
-          { "type": "action", "value": "스팀" },
-          { "type": "ingredient", "value": "파란꽃" },
-          { "type": "quantity", "value": "한꼬집" }
-        ]
-      },
-      {
-        "name": "생강라떼 핫",
-        "recipe": [
-          { "type": "ingredient", "value": "우유" },
-          { "type": "quantity", "value": "170g" },
-          { "type": "ingredient", "value": "생강베이스" },
-          { "type": "quantity", "value": "75g" },
-          { "type": "action", "value": "스팀" },
-          { "type": "ingredient", "value": "시나몬가루" },
-          { "type": "quantity", "value": "적당량" },
-          { "type": "ingredient", "value": "대추칩" },
-          { "type": "quantity", "value": "2개" },
-          { "type": "ingredient", "value": "노무라" },
-          { "type": "quantity", "value": "1개" }
-        ]
-      }
-    ]
-  }
-  
+  "recipes": [
+    {
+      "name": "피치선셋",
+      "recipe": [
+        { "type": "ingredient", "value": "피치프리스" },
+        { "type": "quantity", "value": "45g" },
+        { "type": "ingredient", "value": "탄산수" },
+        { "type": "action", "value": "저어서" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "적당량" },
+        { "type": "ingredient", "value": "오렌지티" },
+        { "type": "quantity", "value": "25g" },
+        { "type": "ingredient", "value": "코코젤리" },
+        { "type": "quantity", "value": "조금" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "수박주스",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "8P" },
+        { "type": "ingredient", "value": "물" },
+        { "type": "quantity", "value": "200ml" },
+        { "type": "ingredient", "value": "수박" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "action", "value": "블렌더 계속버튼" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "레몬에이드",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "12P" },
+        { "type": "ingredient", "value": "레몬청" },
+        { "type": "quantity", "value": "50g" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "적당량" },
+        { "type": "ingredient", "value": "탄산수" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "자몽에이드",
+      "recipe": [
+        { "type": "ingredient", "value": "자몽청" },
+        { "type": "quantity", "value": "55g" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "탄산수" },
+        { "type": "ingredient", "value": "건자몽" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "오미자에이드",
+      "recipe": [
+        { "type": "ingredient", "value": "오미자청" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "탄산수" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "피치 아이스티",
+      "recipe": [
+        { "type": "ingredient", "value": "피치프리스" },
+        { "type": "quantity", "value": "65g" },
+        { "type": "ingredient", "value": "물" },
+        { "type": "action", "value": "저어서" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "자몽차 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "자몽청" },
+        { "type": "quantity", "value": "55g" },
+        { "type": "ingredient", "value": "뜨거운 물" },
+        { "type": "ingredient", "value": "건자몽" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" }
+      ]
+    },
+    {
+      "name": "자몽차 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "자몽청" },
+        { "type": "quantity", "value": "55g" },
+        { "type": "ingredient", "value": "물" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "건자몽" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "오미자차 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "오미자청" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "ingredient", "value": "뜨거운 물" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" }
+      ]
+    },
+    {
+      "name": "오미자차 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "오미자청" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "ingredient", "value": "물" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "데코레몬" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "생강차 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "생강청" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "ingredient", "value": "뜨거운 물" },
+        { "type": "ingredient", "value": "계피스틱" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "대추칩" },
+        { "type": "quantity", "value": "3개" }
+      ]
+    },
+    {
+      "name": "생강차 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "생강청" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "ingredient", "value": "물" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "계피스틱" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "대추칩" },
+        { "type": "quantity", "value": "3개" }
+      ]
+    },
+    {
+      "name": "딸기라떼",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "2P" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "170g" },
+        { "type": "ingredient", "value": "딸기청" },
+        { "type": "quantity", "value": "80g" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "플레인 요거트 스무디",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "140g" },
+        { "type": "ingredient", "value": "요거트 파우더" },
+        { "type": "quantity", "value": "2스푼 수북히!" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "250g" },
+        { "type": "action", "value": "블렌더" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "딸기 요거트 스무디",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "140g" },
+        { "type": "ingredient", "value": "요거트 파우더" },
+        { "type": "quantity", "value": "2스푼 수북히!" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "250g" },
+        { "type": "action", "value": "블렌더" },
+        { "type": "ingredient", "value": "딸기청" },
+        { "type": "quantity", "value": "40g" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "블루베리 요거트 스무디",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "140g" },
+        { "type": "ingredient", "value": "요거트 파우더" },
+        { "type": "quantity", "value": "2스푼 수북히!" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "250g" },
+        { "type": "action", "value": "블렌더" },
+        { "type": "ingredient", "value": "블루베리" },
+        { "type": "quantity", "value": "40g" },
+        { "type": "ingredient", "value": "크랜베리" },
+        { "type": "quantity", "value": "1개" },
+        { "type": "ingredient", "value": "노무라 / 허브" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    },
+    {
+      "name": "미숫가루 스무디",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "140g" },
+        { "type": "ingredient", "value": "미숫가루 파우더" },
+        { "type": "quantity", "value": "2스푼 수수북히!" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "250g" },
+        { "type": "action", "value": "블렌더" },
+        { "type": "ingredient", "value": "크로칸트" },
+        { "type": "quantity", "value": "적당량" }
+      ]
+    },
+    {
+      "name": "초코라떼 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "2P" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "100g" },
+        { "type": "ingredient", "value": "초코베이스" },
+        { "type": "quantity", "value": "130g" }
+      ]
+    },
+    {
+      "name": "초코라떼 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "2P" },
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "100g" },
+        { "type": "ingredient", "value": "초코베이스" },
+        { "type": "quantity", "value": "130g" },
+        { "type": "action", "value": "스팀" }
+      ]
+    },
+    {
+      "name": "말차라떼 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "ingredient", "value": "말차베이스" },
+        { "type": "quantity", "value": "45g" }
+      ]
+    },
+    {
+      "name": "말차라떼 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "ingredient", "value": "말차베이스" },
+        { "type": "quantity", "value": "45g" },
+        { "type": "action", "value": "스팀" }
+      ]
+    },
+    {
+      "name": "자색고구마라떼 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "ingredient", "value": "자색고구마 베이스" },
+        { "type": "quantity", "value": "45g" }
+      ]
+    },
+    {
+      "name": "자색고구마라떼 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "ingredient", "value": "자색고구마 베이스" },
+        { "type": "quantity", "value": "45g" },
+        { "type": "action", "value": "스팀" }
+      ]
+    },
+    {
+      "name": "밀크티 아이스",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "2P" },
+        { "type": "ingredient", "value": "얼음" },
+        { "type": "quantity", "value": "가득" },
+        { "type": "ingredient", "value": "밀크티베이스" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "ingredient", "value": "파란꽃" },
+        { "type": "quantity", "value": "한꼬집" }
+      ]
+    },
+    {
+      "name": "밀크티 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "시럽" },
+        { "type": "quantity", "value": "2P" },
+        { "type": "ingredient", "value": "밀크티베이스" },
+        { "type": "quantity", "value": "200g" },
+        { "type": "action", "value": "스팀" },
+        { "type": "ingredient", "value": "파란꽃" },
+        { "type": "quantity", "value": "한꼬집" }
+      ]
+    },
+    {
+      "name": "생강라떼 핫",
+      "recipe": [
+        { "type": "ingredient", "value": "우유" },
+        { "type": "quantity", "value": "170g" },
+        { "type": "ingredient", "value": "생강베이스" },
+        { "type": "quantity", "value": "75g" },
+        { "type": "action", "value": "스팀" },
+        { "type": "ingredient", "value": "시나몬가루" },
+        { "type": "quantity", "value": "적당량" },
+        { "type": "ingredient", "value": "대추칩" },
+        { "type": "quantity", "value": "2개" },
+        { "type": "ingredient", "value": "노무라" },
+        { "type": "quantity", "value": "1개" }
+      ]
+    }
+  ]
+}
