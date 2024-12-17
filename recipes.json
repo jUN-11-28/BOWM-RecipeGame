@@ -40,7 +40,7 @@
         "recipe": [
           { "type": "ingredient", "value": "시럽" },
           { "type": "quantity", "value": "12P" },
-          { "type": "ingredient", "value": "레몬" },
+          { "type": "ingredient", "value": "레몬청" },
           { "type": "quantity", "value": "50g" },
           { "type": "ingredient", "value": "얼음" },
           { "type": "quantity", "value": "적당량" },
