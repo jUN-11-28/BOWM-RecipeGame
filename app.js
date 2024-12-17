@@ -31,6 +31,10 @@ async function initGame() {
   popup.classList.remove("show");
   selectedCards = [];
 
+  // 지우기 버튼 보이기
+  const backspaceBtn = document.getElementById("backspaceBtn");
+  if (backspaceBtn) backspaceBtn.style.display = "block";
+
   loadRecipes().then((recipes) => {
     currentRecipe = getRandomRecipe(recipes);
     setupGameCards(currentRecipe);
@@ -54,11 +58,18 @@ function setupGameCards(recipe) {
   );
   const quantityContainer = document.getElementById("quantity-card-container");
   const actionContainer = document.getElementById("action-card-container");
+  const recipeTrack = document.getElementById("recipe-track");
 
   // 컨테이너 초기화
   ingredientContainer.innerHTML = "";
   quantityContainer.innerHTML = "";
   actionContainer.innerHTML = "";
+  recipeTrack.innerHTML = "";
+
+  // 뒤로가기 버튼 이벤트 리스너 설정
+  const backspaceBtn = document.getElementById("backspaceBtn");
+  backspaceBtn.onclick = removeLastCard;
+  backspaceBtn.style.display = "block";
 
   // 레시피에서 각 타입별로 고유한 값만 추출
   let ingredients = [
@@ -135,6 +146,8 @@ function handleCardClick(card) {
     type: card.dataset.type,
     value: card.dataset.value,
   });
+  // 카드 추가 후에 실행할 코드
+  recipeTrack.scrollLeft = recipeTrack.scrollWidth;
 
   // 선택된 카드 수가 현재 레시피의 스텝 수와 같아지면 정답 체크
   if (selectedCards.length === currentRecipe.recipe.length) {
@@ -167,8 +180,12 @@ function showResultPopup(isCorrect) {
   const resultText = popup.querySelector(".result-text");
   const scoreChange = popup.querySelector(".score-change");
   const nextButton = document.getElementById("nextButton");
+  const backspaceBtn = document.getElementById("backspaceBtn");
 
-  clearInterval(timerInterval); // 타이머 중지
+  clearInterval(timerInterval);
+
+  // 지우기 버튼 숨기기
+  if (backspaceBtn) backspaceBtn.style.display = "none";
 
   if (isCorrect) {
     resultText.textContent = "정답입니다!";
@@ -277,37 +294,82 @@ function updateTimerLine() {
 }
 
 // 시작 화면 관련 코드 추가
-document.getElementById('startButton').addEventListener('click', function() {
-    document.getElementById('startScreen').classList.add('hidden');
-    playBackgroundMusic();
-    initGame();
+document.getElementById("startButton").addEventListener("click", function () {
+  document.getElementById("startScreen").classList.add("hidden");
+  playBackgroundMusic();
+  initGame();
 });
 
 // playBackgroundMusic 함수 수정
 function playBackgroundMusic() {
-    bgMusic.volume = 0.3;
-    
-    // 음악 컨트롤 버튼 추가
-    const musicControl = document.createElement('button');
-    musicControl.innerHTML = '🔊';
-    musicControl.style.position = 'fixed';
-    musicControl.style.top = '10px';
-    musicControl.style.right = '10px';
-    musicControl.style.zIndex = '1000';
-    musicControl.style.padding = '5px 10px';
-    musicControl.style.fontSize = '20px';
-    musicControl.style.cursor = 'pointer';
-    
-    musicControl.addEventListener('click', function() {
-        if (bgMusic.paused) {
-            bgMusic.play();
-            this.innerHTML = '🔊';
-        } else {
-            bgMusic.pause();
-            this.innerHTML = '🔈';
-        }
-    });
-    
-    document.body.appendChild(musicControl);
-    bgMusic.play();
+  bgMusic.volume = 0.3;
+
+  // 음악이 끝나면 게임 종료
+  bgMusic.addEventListener("ended", endGame);
+
+  // 음악 컨트롤 버튼 추가
+  const musicControl = document.createElement("button");
+  musicControl.innerHTML = "🔊";
+  musicControl.style.position = "fixed";
+  musicControl.style.top = "10px";
+  musicControl.style.right = "10px";
+  musicControl.style.zIndex = "1000";
+  musicControl.style.padding = "5px 10px";
+  musicControl.style.fontSize = "20px";
+  musicControl.style.cursor = "pointer";
+
+  musicControl.addEventListener("click", function () {
+    if (bgMusic.paused) {
+      bgMusic.play();
+      this.innerHTML = "🔊";
+    } else {
+      bgMusic.pause();
+      this.innerHTML = "🔈";
+    }
+  });
+
+  document.body.appendChild(musicControl);
+  bgMusic.play();
 }
+
+// 게임 종료 함수 추가
+function endGame() {
+  clearInterval(timerInterval);
+
+  // 게임 종료 팝업 생성
+  const endGamePopup = document.createElement("div");
+  endGamePopup.className = "end-game-popup";
+  endGamePopup.innerHTML = `
+        <div class="end-game-content">
+            <h2>게임 종료!</h2>
+            <p>최종 점수: ${score}점</p>
+            <button id="restartButton">다시 하기</button>
+        </div>
+    `;
+
+  document.body.appendChild(endGamePopup);
+
+  // 다시 하기 버튼 이벤트 리스너
+  document.getElementById("restartButton").addEventListener("click", () => {
+    score = 0;
+    updateScore(0);
+    endGamePopup.remove();
+    document.getElementById("startScreen").classList.remove("hidden");
+    bgMusic.currentTime = 0;
+  });
+}
+
+// 마지막 카드 제거 함수 추가
+function removeLastCard() {
+  const recipeTrack = document.getElementById("recipe-track");
+  if (selectedCards.length > 0) {
+    selectedCards.pop(); // 배열에서 마지막 카드 제거
+    recipeTrack.removeChild(recipeTrack.lastChild); // DOM에서 마지막 카드 제거
+  }
+}
+
+// 페이지 로드 시 초기 설정
+document.addEventListener("DOMContentLoaded", function () {
+  const backspaceBtn = document.getElementById("backspaceBtn");
+  backspaceBtn.style.display = "none"; // 초기에는 버튼 숨기기
+});
