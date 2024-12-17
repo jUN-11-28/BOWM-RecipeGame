@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOWM Recipe Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>BOWM Recipe Game</h2>
+    <div class="section-container" id="tutorial-container" style="display: none">
+      <div>How to play</div>
+      <div></div>
+        <p>
+          주어진 메뉴를 보고 레시피를 완성해보세요!
+          <br />
+          <br />
+          레시피를 완성하면 점수를 얻을 수 있습니다.
+          <br />
+          <br />
+          재료명+수량+동작 순서대로 카드를 탭해보세요!
+        </p>
+      </div>
+    </div>
+    <div class="section-container" id="game-container" style="display: flex">
+      <div id="score-container">Score: 0</div>
+      <h2 id="recipe-name"></h2>
+      <button id="nextButton" class="next-button" style="display: none;">다음 문제</button>
+      <div id="recipe-track-container">
+        Guess the recipe!
+        <div id="recipe-track">
+          <!-- <div class="ingredient-card">피치프리스</div>
+          <div class="quantity-card">45</div>
+          <div class="ingredient-card">탄산수</div>
+          <div class="action-card">저어서</div>
+          <div class="ingredient-card">얼음</div>
+          <div class="ingredient-card">오렌지티</div>
+          <div class="quantity-card">25</div>
+          <div class="ingredient-card">코코젤리</div>
+          <div class="ingredient-card">데코레몬</div>
+          <div class="ingredient-card">크랜베리</div>
+          <div class="ingredient-card">노무라 / 허브</div> -->
+        </div>
+      </div>
+      <br />
+      <div>Tap the cards below to guess the recipe!</div>
+      <div id="ingredient-card-container">
+        <!-- <div class="ingredient-card">피치프리스</div>
+        <div class="ingredient-card">자몽청</div>
+        <div class="ingredient-card">오미자청</div>
+        <div class="ingredient-card">레몬청</div>
+        <div class="ingredient-card">데코레몬</div>
+        <div class="ingredient-card">오렌지티</div> -->
+      </div>
+      <div id="quantity-card-container">
+        <!-- <div class="quantity-card">25</div>
+        <div class="quantity-card">45</div>
+        <div class="quantity-card">55</div>
+        <div class="quantity-card">75</div>
+        <div class="quantity-card">100</div>
+        <div class="quantity-card">170</div>
+        <div class="quantity-card">200</div> -->
+      </div>
+      <div id="action-card-container">
+        <!-- <div class="action-card">저어서</div> -->
+      </div>
+    </div>
+
+    <div class="timer-container">
+        <div class="timer-line"></div>
+    </div>
+
+    <div class="result-popup" id="resultPopup">
+        <div class="popup-content">
+            <span class="result-text"></span>
+            <div class="score-change"></div>
+            <button id="nextButton" class="next-button" style="display: none;">다음 문제</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="Quiz Quest 8-bit Beat.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="startScreen" class="start-screen">
+        <button id="startButton" class="start-button">게임 시작</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
