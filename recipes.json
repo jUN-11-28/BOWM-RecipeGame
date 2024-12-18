@@ -94,10 +94,8 @@
         { "type": "action", "value": "저어서" },
         { "type": "ingredient", "value": "얼음" },
         { "type": "quantity", "value": "가득" },
-        { "type": "ingredient", "value": "데코레몬" },
-        { "type": "quantity", "value": "1개" },
-        { "type": "ingredient", "value": "크랜베리" },
-        { "type": "quantity", "value": "3개" },
+        { "type": "ingredient", "value": "코코젤리" },
+        { "type": "quantity", "value": "조금" },
         { "type": "ingredient", "value": "노무라 / 허브" },
         { "type": "quantity", "value": "1개" }
       ]
