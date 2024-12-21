@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        padding: 0;
+        background-color: #2b2b2b; /* 어두운 계열 배경색 */
+        color: #ffffff; /* 기본 글자 색상: 흰색 */
+      }
+
+      h1 {
+        color: #ffffff; /* 헤더 색상 */
+      }
+
+      h2 {
+        color: #dddddd; /* 약간 연한 흰색 */
+        margin-top: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+        color: #cccccc; /* 약간 어두운 흰색 */
+      }
+
+      .recipe {
+        margin-bottom: 30px;
+      }
+
+      .step {
+        margin: 5px 0;
+      }
+
+      .ingredient {
+        color: #ffae67; /* 주황색 */
+      }
+
+      .quantity {
+        color: #71c4ff; /* 파란색 */
+      }
+
+      .action {
+        color: #67ff76; /* 초록색 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to Play this Game!</h1>
+    <p>
+      1. 게임 시작 후 노래가 끝나기 전까지 플레이를 진행합니다 (약 1분 30초).
+    </p>
+    <p>2. 한 레시피당 제한시간은 <strong>30초</strong>입니다.</p>
+    <p>3. 레시피를 맞출 때마다 <strong>10점</strong>이 부과됩니다.</p>
+    <p><strong>순서:</strong> 재료 → 량 → 액션 순으로 진행됩니다.</p>
+    <p>량이 없는 것은 다음 카드를 바로 클릭하면 됩니다.</p>
+    <hr />
+    <h2>Recipes</h2>
+    <div id="recipes"></div>
+
+    <script>
+      // JSON 데이터를 불러와서 처리
+      fetch("recipes.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to load JSON file");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const recipesContainer = document.getElementById("recipes");
+
+          data.recipes.forEach((recipe) => {
+            // 레시피 이름 추가
+            const recipeDiv = document.createElement("div");
+            recipeDiv.className = "recipe";
+
+            const recipeTitle = document.createElement("h3");
+            recipeTitle.textContent = recipe.name;
+            recipeDiv.appendChild(recipeTitle);
+
+            // 레시피 단계를 연결해서 추가
+            const steps = recipe.recipe.map((step) => {
+              let span = document.createElement("span");
+              span.textContent = step.value;
+
+              // 색상 설정
+              if (step.type === "ingredient") {
+                span.className = "ingredient";
+              } else if (step.type === "quantity") {
+                span.className = "quantity";
+              } else if (step.type === "action") {
+                span.className = "action";
+              }
+
+              return span.outerHTML; // HTML 문자열로 반환
+            });
+
+            // 화살표(→)로 연결
+            const stepsDiv = document.createElement("div");
+            stepsDiv.className = "steps";
+            stepsDiv.innerHTML = steps.join(" → ");
+            recipeDiv.appendChild(stepsDiv);
+
+            recipesContainer.appendChild(recipeDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          document.getElementById("recipes").innerHTML =
+            "<p>Failed to load recipes.</p>";
+        });
+    </script>
+  </body>
+</html>
